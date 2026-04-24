@@ -12,3 +12,4 @@ A Flask backend API for personal trainers to manage workouts and exercises.
    flask db init
    flask db migrate -m "initial migration"
    flask db upgrade 
+6. Run `python3 seed.py`
