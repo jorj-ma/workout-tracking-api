@@ -28,9 +28,21 @@ Run:
 ```
 python3 seed.py
 ```
-## Testing endpoits
-Use an API client like curl or postman to test the endpoints
-
+## Running the API server
+The CLI client expects the backend API to be available at `http://localhost:5000`.
+Start the server ny running:
+```
+python3 app.py
+```
+## Testing endpoints
+Based on the current CLI, the endpoints include:
+- `GET /workouts` - list available workouts
+- `POST /workouts` - add workout
+- `GET /workouts/<id>` - get workout by id
+- `DELETE /workout/<id>` - delete workout by id
+- `GET /exercicses` - list available exercises
+- `POST /exercises` - add exercise
+- `POST /workouts/<workout_id>/exercises/<exercise_id>/workout_exercises` - add exercise to workout
 
 ## Author
 - Anzigale George
