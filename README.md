@@ -2,14 +2,41 @@
 
 A Flask backend API for personal trainers to manage workouts and exercises.
 
-## Setup Instructions
-1. Clone the repository
-2. Navigate into the repo
-3. Run `pipenv install` to install dependencies.
-4. Enter the shell: `pipenv shell`.
-5. Initialize Database:
-   ```bash
+## Prerequisites
+- Python 3.8+
+- `pipenv`
+
+## Installation
+Clone the repository then run:
+```
+cd workout-tracking-api
+```
+```
+pipenv install
+```
+```
+pipenv shell
+```
+## Initialize Database:
+   ```
    flask db init
    flask db migrate -m "initial migration"
-   flask db upgrade 
-6. Run `python3 seed.py`
+   flask db upgrade
+```
+## Populate the database with seed data
+Run:
+```
+python3 seed.py
+```
+## Testing endpoits
+Use an API client like curl or postman to test the endpoints
+
+
+## Author
+- Anzigale George
+
+## Contributions
+Contributions are welcome. Open an issue with  a clear description of the proposed improvements.
+
+## License
+The code is open for use.
